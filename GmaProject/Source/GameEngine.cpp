@@ -5,7 +5,7 @@
  *
  * \brief : Its a Component based engine.
  * Game Engine class handles different system.
- * Systems can be Physics, Graphics, Window, etc.
+ * Systems can be Physics, GraphicsSystem, Window, etc.
  * Each system in turn handles components like Physics will handle
  * component like Body.
  * \author Akshay

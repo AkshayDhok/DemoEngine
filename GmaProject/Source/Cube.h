@@ -1,5 +1,5 @@
 #pragma once
-#include "Graphics.h"
+#include "GraphicsSystem.h"
 
 //vertices for cube
 static const GLfloat g_vertex_buffer_data[] = {

@@ -57,11 +57,11 @@
     <ClCompile Include="Source\Sprite.cpp">
       <Filter>Graphics\component</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Graphics.cpp">
-      <Filter>Graphics\system</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Cube.h">
       <Filter>Graphics\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GraphicsSystem.cpp">
+      <Filter>Graphics\system</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -91,11 +91,11 @@
     <ClInclude Include="Source\ObjectComponent.h">
       <Filter>Engine\Interface</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Graphics.h">
-      <Filter>Graphics\system</Filter>
-    </ClInclude>
     <ClInclude Include="Source\IGameEngine.h">
       <Filter>Engine\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GraphicsSystem.h">
+      <Filter>Graphics\system</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

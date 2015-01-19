@@ -14,7 +14,7 @@
     <ClCompile Include="Source\Cube.h" />
     <ClCompile Include="Source\EngineMain.cpp" />
     <ClCompile Include="Source\GameEngine.cpp" />
-    <ClCompile Include="Source\Graphics.cpp" />
+    <ClCompile Include="Source\GraphicsSystem.cpp" />
     <ClCompile Include="Source\ShaderUtil.cpp" />
     <ClCompile Include="Source\Sprite.cpp" />
     <ClCompile Include="Source\WindowSystem.cpp" />
@@ -25,7 +25,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\GameEngine.h" />
-    <ClInclude Include="Source\Graphics.h" />
+    <ClInclude Include="Source\GraphicsSystem.h" />
     <ClInclude Include="Source\IGameEngine.h" />
     <ClInclude Include="Source\Message.h" />
     <ClInclude Include="Source\ObjectComponent.h" />

@@ -1,37 +1,37 @@
-#include "Graphics.h"
+#include "GraphicsSystem.h"
 #include <string.h>
 #include "ShaderUtil.h"
 #include <glm/gtc/matrix_transform.hpp>
 
-// initialize singleton static instance to graphics
-Graphics* Graphics::pGraphics = NULL;
+// initialize singleton static instance to GraphicsSystem
+GraphicsSystem* GraphicsSystem::pGraphics = NULL;
 
 /*!
 * getGraphics
 * \brief :Method responsible for providing singleton
 * instance of graphics system.
-* \return: Graphics*
+* \return: GraphicsSystem*
 */
-Graphics* Graphics::getGraphics()
+GraphicsSystem* GraphicsSystem::getGraphics()
 {
 	if (!pGraphics) {
-		pGraphics = new Graphics();
+		pGraphics = new GraphicsSystem();
 	}
 	return pGraphics;
 }
 
 /*!
- * Graphics
+ * GraphicsSystem
  * \brief :Constructor.
  * \param[in] sf::RenderWindow * window
  * \return 
  */
-Graphics::Graphics()
+GraphicsSystem::GraphicsSystem()
 {
 }
 
 
-Graphics::~Graphics()
+GraphicsSystem::~GraphicsSystem()
 {
 }
 
@@ -42,7 +42,7 @@ Graphics::~Graphics()
 * in update.
 * \return void
 */
-void Graphics::setWindow(GLFWwindow *window_context)
+void GraphicsSystem::setWindow(GLFWwindow *window_context)
 {
 	pWindow = window_context;
 }
@@ -54,7 +54,7 @@ void Graphics::setWindow(GLFWwindow *window_context)
  * in update.
  * \return void
  */
-void Graphics::Init()
+void GraphicsSystem::Init()
 {
 	glewExperimental = true; // Needed in core profile
 	if (glewInit() != GLEW_OK) {
@@ -112,7 +112,7 @@ void Graphics::Init()
  * \param[in] float deltaTime
  * \return void
  */
-void Graphics::Update(float deltaTime)
+void GraphicsSystem::Update(float deltaTime)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -130,7 +130,7 @@ void Graphics::Update(float deltaTime)
  * \param[in] Msg msg
  * \return void
  */
-void Graphics::OnMsgEvent(Msg msg)
+void GraphicsSystem::OnMsgEvent(Msg msg)
 {
 	
 }

@@ -1,5 +1,5 @@
 #include "Sprite.h"
-#include "Graphics.h"
+#include "GraphicsSystem.h"
 #include "Cube.h"
 #include <iostream>
 /*!

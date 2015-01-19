@@ -1,7 +1,7 @@
 
 #include "GameEngine.h"
 #include "WindowSystem.h"
-#include "Graphics.h"
+#include "GraphicsSystem.h"
 
 /*!
 * \class EngineMain.cpp
@@ -19,7 +19,7 @@ int main()
 	WindowSystem *window = new WindowSystem(800, 600);
 
 	//create graphics system
-	Graphics *graphics_system = Graphics::getGraphics();
+	GraphicsSystem *graphics_system = GraphicsSystem::getGraphics();
 	graphics_system->setWindow(window->GetWindow());
 
 	// add the systems to the engine.
