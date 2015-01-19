@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{4bc3f9df-ed28-4242-ba5a-7d85a7f73adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{5345c485-ba1d-4e4a-b2c2-9a167d29756b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{5a7e2539-ec4a-4be1-a9a0-c4007b82624c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core">
+      <UniqueIdentifier>{73ba6783-cffa-44c1-ac83-a19383ea61c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WindowSystem">
+      <UniqueIdentifier>{439a198c-4a17-4b78-8869-2eafd10b304d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Interface">
+      <UniqueIdentifier>{8b7e8480-8aec-45b1-b079-939561623ba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\component">
+      <UniqueIdentifier>{70e3db72-c620-418c-a28d-11300224e6bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\system">
+      <UniqueIdentifier>{f1597ee7-abe1-4bcb-821f-631d37f4917e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\shapes">
+      <UniqueIdentifier>{04a4c93a-5026-4a76-9004-9f23bddced8a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\ShaderUtil.cpp">
+      <Filter>Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameEngine.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WindowSystem.cpp">
+      <Filter>WindowSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EngineMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Sprite.cpp">
+      <Filter>Graphics\component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics.cpp">
+      <Filter>Graphics\system</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Cube.h">
+      <Filter>Graphics\shapes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\FragmentShader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Source\VertexShader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\ShaderUtil.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameEngine.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Message.h">
+      <Filter>WindowSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WindowSystem.h">
+      <Filter>WindowSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Sprite.h">
+      <Filter>Graphics\component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ObjectComponent.h">
+      <Filter>Engine\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics.h">
+      <Filter>Graphics\system</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IGameEngine.h">
+      <Filter>Engine\Interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
